@@ -14,7 +14,6 @@ namespace VT10_Encriptador_mensajes
             Console.ReadKey();
         }
 
-
         public static string EncriptarMensaje(string mensaje)
         {
             // Declaración de variables
@@ -72,9 +71,46 @@ namespace VT10_Encriptador_mensajes
                     mensajeEncriptado += arrayEncriptado[j];
                 }
             }
-
             return "El mensaje encriptado es: " + mensajeEncriptado;
-
         }
     }
 }
+
+// SOLUCION MAS CORTA CON FOR LOOP
+//
+//static void Main(string[] args)
+//{
+//    string mensaje = "IlERNa";
+//    string[] arrayEncriptado = new string[mensaje.Length];
+//    string mensajeEncriptado = "";
+
+//    for (int i = 0; i < mensaje.Length; i++)
+//    {
+//        char c = mensaje[i];
+//        int codigoASCII = (int)c;
+
+//        string numero = codigoASCII.ToString();
+
+//        int primerNum = int.Parse(numero[0].ToString());
+//        int ultimoNum = int.Parse(numero[numero.Length - 1].ToString());
+
+//        int principio = codigoASCII + ultimoNum;
+//        int final = codigoASCII - primerNum;
+
+//        char caracterPri = (char)principio;
+//        char caracterFin = (char)final;
+
+//        string caracterEncriptado = caracterPri.ToString() + numero[0] + numero[numero.Length - 1] + caracterFin.ToString();
+
+//        arrayEncriptado[i] = caracterEncriptado;
+//    }
+
+//    for (int j = 0; j < arrayEncriptado.Length; j++)
+//    {
+//        mensajeEncriptado += arrayEncriptado[j];
+//    }
+
+//    Console.WriteLine("El mensaje encriptado es: " + mensajeEncriptado);
+
+//    Console.ReadKey();
+//}

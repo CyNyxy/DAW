@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace VT10_Vector_aleatorio
 {
@@ -10,7 +6,28 @@ namespace VT10_Vector_aleatorio
     {
         static void Main(string[] args)
         {
+            int[] vector = new int[10];
 
+            GenerarAleatorio(vector);
+            ImprimirVector(vector);
+        }
+
+        static void GenerarAleatorio(int[] vector)
+        {
+            Random rnd = new Random();
+
+            for (int i = 0; i < vector.Length; i++)
+            {
+                vector[i] = rnd.Next(0, 51);
+            }
+        }
+
+        static void ImprimirVector(int[] vector)
+        {
+            for (int i = 0; i < vector.Length; i++)
+            {
+                Console.Write(vector[i] + " ");
+            }
         }
     }
 }
