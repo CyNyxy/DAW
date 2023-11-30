@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace VT09
+namespace VT09_Sumar_en_consola
 {
     internal class Program
     {

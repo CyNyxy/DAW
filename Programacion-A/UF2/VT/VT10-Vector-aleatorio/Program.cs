@@ -12,21 +12,21 @@ namespace VT10_Vector_aleatorio
             ImprimirVector(vector);
         }
 
-        static void GenerarAleatorio(int[] vector)
+        static void GenerarAleatorio(int[] array)
         {
             Random rnd = new Random();
 
-            for (int i = 0; i < vector.Length; i++)
+            for (int i = 0; i < array.Length; i++)
             {
-                vector[i] = rnd.Next(0, 51);
+                array[i] = rnd.Next(0, 51);
             }
         }
 
-        static void ImprimirVector(int[] vector)
+        static void ImprimirVector(int[] array)
         {
-            for (int i = 0; i < vector.Length; i++)
+            for (int i = 0; i < array.Length; i++)
             {
-                Console.Write(vector[i] + " ");
+                Console.Write(array[i] + " ");
             }
         }
     }

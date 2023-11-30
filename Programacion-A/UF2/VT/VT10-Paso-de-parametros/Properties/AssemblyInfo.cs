@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // La información general de un ensamblado se controla mediante el siguiente 
 // conjunto de atributos. Cambie estos valores de atributo para modificar la información
 // asociada a un ensamblado.
-[assembly: AssemblyTitle("VT09")]
+[assembly: AssemblyTitle("VT10-Paso-de-parametros")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("VT09")]
+[assembly: AssemblyProduct("VT10-Paso-de-parametros")]
 [assembly: AssemblyCopyright("Copyright ©  2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // El siguiente GUID sirve como id. de typelib si este proyecto se expone a COM.
-[assembly: Guid("e5fba20b-2a5d-4416-9446-333ce96b1013")]
+[assembly: Guid("082124c0-9464-4a22-a750-5aa6ec7bb2a5")]
 
 // La información de versión de un ensamblado consta de los cuatro valores siguientes:
 //

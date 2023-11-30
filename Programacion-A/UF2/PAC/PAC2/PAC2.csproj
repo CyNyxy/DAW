@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E5FBA20B-2A5D-4416-9446-333CE96B1013}</ProjectGuid>
+    <ProjectGuid>{9138DED3-F210-4021-A16B-30D16FAA273F}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>VT09</RootNamespace>
-    <AssemblyName>VT09</AssemblyName>
+    <RootNamespace>PAC2</RootNamespace>
+    <AssemblyName>PAC2</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

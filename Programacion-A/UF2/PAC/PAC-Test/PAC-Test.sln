@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.7.34202.233
+VisualStudioVersion = 17.8.34316.72
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VT09", "VT09.csproj", "{E5FBA20B-2A5D-4416-9446-333CE96B1013}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PAC-Test", "PAC-Test.csproj", "{CADF0753-FBE6-4C27-B3F9-3D2D75127444}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E5FBA20B-2A5D-4416-9446-333CE96B1013}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E5FBA20B-2A5D-4416-9446-333CE96B1013}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E5FBA20B-2A5D-4416-9446-333CE96B1013}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E5FBA20B-2A5D-4416-9446-333CE96B1013}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CADF0753-FBE6-4C27-B3F9-3D2D75127444}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CADF0753-FBE6-4C27-B3F9-3D2D75127444}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CADF0753-FBE6-4C27-B3F9-3D2D75127444}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CADF0753-FBE6-4C27-B3F9-3D2D75127444}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {2F4C104B-5647-439F-AD18-F2FA532C2E91}
+		SolutionGuid = {4712EF95-60E7-4D5F-B698-4CD6B59EAD7E}
 	EndGlobalSection
 EndGlobal
