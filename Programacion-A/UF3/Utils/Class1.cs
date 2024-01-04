@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Globalization;
 
 namespace Utils
 {
@@ -36,7 +37,6 @@ namespace Utils
 
         public static StreamReader DameStreamLectura(FileStream Fichero)
         {
-
             StreamReader sr = new StreamReader(Fichero);
 
             Nomenclatura(sr);
@@ -56,10 +56,12 @@ namespace Utils
                 string[] palabras = linea.Trim().Split(' ');
 
                 string fecha = palabras[0].Substring(0, 8);
+                DateTime date = DateTime.ParseExact(fecha, "yyyyMMdd", null);
+                fecha = date.Date.ToShortDateString();
                 string importe = palabras[palabras.Length - 1];
                 string concepto = (palabras[0].Substring(8) + " " + palabras[1] + " " + palabras[2]).PadRight(33);
 
-                string registro = "|   " + fecha + "  | " + concepto + " | " + importe.PadRight(10) + "|";
+                string registro = "|  " + fecha + " | " + concepto + " | " + importe.PadRight(10) + "|";
                 Console.WriteLine(registro);
             }
         }
