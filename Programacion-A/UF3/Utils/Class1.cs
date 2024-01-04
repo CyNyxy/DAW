@@ -42,8 +42,16 @@ namespace Utils
 
             while ((linea = sr.ReadLine()) != null)
             {
-                string fecha = "|   " + linea.Substring(0, 8) + "  | " + linea.Substring(8) + "    |";
-                Console.WriteLine(fecha);
+                
+                string[] palabras = linea.Trim().Split(' ');
+
+
+                string fecha = palabras[0].Substring(0, 8);
+                string importe = palabras[palabras.Length - 1];
+                string concepto = (palabras[0].Substring(8) + " " + palabras[1] + " " + palabras[2]).PadRight(33);
+
+                string registro = "|   " + fecha + "  | " + concepto + " | " + importe.PadRight(10) + "|";
+                Console.WriteLine(registro);
             }
             sr.Close();
             Fichero.Close();

@@ -12,7 +12,7 @@ namespace Gastos_mes
             string[] paths = Directory.GetFiles(Utils.OP_Ficheros.dir_ficheros, patron);
 
             Console.Write("|-------------------------------------------------------------|\n");
-            Console.Write("|    FECHA    |    CONCEPTO                   |    IMPORTE    |\n");
+            Console.Write("|    FECHA    |    CONCEPTO                       |  IMPORTE  |\n");
             Console.Write("|-------------------------------------------------------------|\n");
 
             foreach (string path in paths)
