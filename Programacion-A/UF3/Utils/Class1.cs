@@ -38,13 +38,22 @@ namespace Utils
         {
 
             StreamReader sr = new StreamReader(Fichero);
+
+            Nomenclatura(sr);
+
+            sr.Close();
+            Fichero.Close();
+
+            return sr;
+        }
+
+        public static void Nomenclatura(StreamReader Fichero)
+        {
             string linea = "";
 
-            while ((linea = sr.ReadLine()) != null)
+            while ((linea = Fichero.ReadLine()) != null)
             {
-                
                 string[] palabras = linea.Trim().Split(' ');
-
 
                 string fecha = palabras[0].Substring(0, 8);
                 string importe = palabras[palabras.Length - 1];
@@ -53,12 +62,7 @@ namespace Utils
                 string registro = "|   " + fecha + "  | " + concepto + " | " + importe.PadRight(10) + "|";
                 Console.WriteLine(registro);
             }
-            sr.Close();
-            Fichero.Close();
-
-            return sr;
         }
-
 
         //public static StreamWriter DameStreamEscritura(FileStream Fichero)
     }
